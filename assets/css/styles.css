@@ -286,6 +286,10 @@ img {
   display: flex;
   align-items: center;
 }
+.certs__names {
+  display: flex;
+  align-items: center;
+}
 .skills__bar {
   position: absolute;
   left: 0;
@@ -402,6 +406,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
+  }
+  .certs__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
   }
   .skills__container {
     grid-template-columns: 0.7fr;
