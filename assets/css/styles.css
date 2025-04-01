@@ -10,6 +10,7 @@
   --hue-color: 112.48deg;
   --first-color: hsl(var(--hue-color), 91.58%, 32.22%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
+  --third-color: hsl(65.91deg 74.3% 48.43%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -194,6 +195,9 @@ img {
 .home__title-color {
   color: var(--first-color);
 }
+.word__title-color {
+  color: var(--third-color);
+}
 .home__social {
   display: flex;
   flex-direction: column;
@@ -240,6 +244,7 @@ img {
   text-align: center;
 }
 .about__subtitle {
+  font-size: var(--h2-font-size);
   margin-bottom: var(--mb-2);
 }
 .about__img {
