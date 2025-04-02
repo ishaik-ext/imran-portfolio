@@ -47,6 +47,7 @@
  width: 20px;
  cursor: pointer;
  align-items: end;
+ margin-right: 5px;
 }
 
 /*===== BASE =====*/
@@ -296,7 +297,7 @@ img {
   font-weight: bold;
   margin-left: 10%;
   margin-right: 10%;
-  color: rgb(9, 89, 69);
+  color: var(--first-color);
 }
 .work__text {
   font-size: var(--mid-font-size);
