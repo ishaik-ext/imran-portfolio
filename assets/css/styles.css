@@ -499,24 +499,6 @@ img {
     display: flex;
     padding-top: 2%;
   }
-  .nav__list2{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .nav__list2 li {
-    margin-right: 15px;
-  }
-  .nav__list2 li:last-child{
-    margin-right: 0;
-  }
-  .nav__list2 img {
-    filter: grayscale(100) brightness(70%);
-    width: 40px;
-    height: 40px;
-  }
-  margin-right: 0;
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
