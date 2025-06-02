@@ -1,388 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio website complete</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <img src="assets\img\night-mode.png" id="icon" alt="">
+            </div>
+            <div>
+                <a href="#" class="nav__logo">Portfolio</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#certs" class="nav__link">Certifications & Awards</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shaik Imran</span><br> Java
+                    Developer</h1>
+
+                <a href="assets\resume\Imran_java_2025.pdf" download="Imran_Pro_Resume.pdf" class="button">Download
+                    Resume</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/shaik-imran-9aa435181/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/ishaik-ext" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="1" y="15" href="assets/img/perfil.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">WHAT I DO</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
                 <div>
-                    <img src="assets\img\night-mode.png" id="icon" alt="">
+                    <h1 class="about__subtitle">MY DREAM IS TO BRING MY <span class="word__title-color">IDEAS</span><br>
+                        INTO THE WEB</h1>
+                    <p class="about__text">Experienced Java Spring Boot Developer dedicated to building scalable and
+                        robust applications and microservices. Proficient in backend development, creating RESTful APIs,
+                        and integrating seamlessly with cloud platforms. Strong foundation in Agile methodologies and
+                        DevOps practices, ensuring the delivery of high-quality code in fast-paced environments.</p>
                 </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div id="skills-container">
+                <div class="icons-wrapper">
+                    <img src="assets/icons/java.png" alt="Java">
+                    <img src="assets/icons/spring.svg" alt="Spring">
+                    <img src="assets/icons/springboot.svg" alt="Spring Boot">
+                    <img src="assets/icons/postgresql.svg" alt="PostgreSQL">
+                    <img src="assets/icons/html5.svg" alt="HTML5">
+                    <img src="assets/icons/swagger.svg" alt="Swagger">
+                    <img src="assets/icons/css.svg" alt="CSS">
+                    <img src="assets/icons/bootstrap.svg" alt="Bootstrap">
+                    <img src="assets/icons/bitbucket.svg" alt="Bitbucket">
+                    <img src="assets\icons\kibana.svg" alt="Kibana">
+                    <img src="assets/icons/jenkins.svg" alt="Jenkins">
+                    <img src="assets/icons/postman.svg" alt="Postman">
+                    <img src="assets/icons/mysql.svg" alt="MySQL">
+                    <img src="assets/icons/grafana.svg" alt="Grafana">
+                    <img src="assets/icons/github.svg" alt="GitHub">
+                    <img src="assets/icons/git.svg" alt="Git">
+                    <img src="assets/icons/figma.svg" alt="Figma">
+                    <img src="assets/icons/docker.svg" alt="Docker">
+                    <img src="assets/icons/apachekafka.svg" alt="Apache Kafka">
+                    <img src="assets/icons/apachejmeter.svg" alt="Apache JMeter">
+                </div>
+            </div>
+            <p class="skillsData__text">Java Developer | Spring boot | PostgreSQL | Advanced Java | MySQL | Docker |
+                kafka | Kibana | Maven | Microservice | Component Testing | Automation</p>
+            <p class="skills__text">Expertise in Java (Core & Advanced), Spring Boot, Spring MVC, and microservices
+                architecture, ensuring scalable software solutions.
+                • Skilled in RESTful API development, API security (OAuth2, JWT), and seamless integration with external
+                systems.
+                • Hands-on experience with database management using SQL, PostgreSQL, and MongoDB for optimized data
+                storage solutions.
+                • Proficient in DevOps practices, leveraging CI/CD pipelines with Jenkins and Docker for automated
+                deployments.
+                • Strong understanding of real-time data processing using Apache Kafka, ensuring efficient event-driven
+                architectures.
+                • Adept at test automation with JUnit and Mockito, improving code quality and reducing bug occurrences.
+                • Proven ability to mentor junior engineers and work closely with cross-functional teams to achieve
+                project success.</p>
+            <div class="skills__container bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Portfolio</a>
-                </div>
-            
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#certs" class="nav__link">Certifications & Awards</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                   
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shaik Imran</span><br> Java Developer</h1>
-
-                    <a href="assets\resume\Imran_java_2025.pdf" download="Imran_Pro_Resume.pdf" class="button">Download Resume</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/shaik-imran-9aa435181/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/ishaik-ext" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="1" y="15" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">WHAT I DO</h2>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h1 class="about__subtitle">MY DREAM IS TO BRING MY <span class="word__title-color">IDEAS</span><br>  INTO THE WEB</h1>
-                        <p class="about__text">Experienced Java Spring Boot Developer dedicated to building scalable and robust applications and microservices. Proficient in backend development, creating RESTful APIs, and integrating seamlessly with cloud platforms. Strong foundation in Agile methodologies and DevOps practices, ensuring the delivery of high-quality code in fast-paced environments.</p>
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <div id="skill_icons">
-                        <ul class="nav__list">
-                            <img src="assets\icons\java.png" alt="">
-                            <img src="assets\icons\spring.svg" alt="">
-                            <img src="assets\icons\springboot.svg" alt="">
-                            <img src="assets\icons\postgresql.svg" alt=" ">
-                            <img src="assets\icons\html5.svg" alt="">
-                            <img src="assets\icons\swagger.svg" alt="">
-                            <img src="assets\icons\css.svg" alt="">
-                            <img src="assets\icons\bootstrap.svg" alt="">
-                            <img src="assets\icons\bitbucket.svg" alt="">
-                            <img src="assets\icons\kibana.png" alt="">
-                            <img src="assets\icons\jenkins.svg" alt="">
-                            <img src="assets\icons\postman.svg" alt="">
-                            <img src="assets\icons\mysql.svg" alt="">
-                            <img src="assets\icons\grafana.svg" alt="">
-                            <img src="assets\icons\github.svg" alt="">
-                            <img src="assets\icons\git.svg" alt="">
-                            <img src="assets\icons\figma.svg" alt="">
-                            <img src="assets\icons\docker.svg" alt="">
-                            <img src="assets\icons\apachekafka.svg" alt="">
-                            <img src="assets\icons\apachejmeter.svg" alt="">
-                            <img src="assets\icons\kibana.svg" alt="">
-                            <img src="assets\icons\postgre.png" alt="">
-                           </ul>
-                </div>
-                <p class="skillsData__text">Java Developer | Spring boot | PostgreSQL | Advanced Java | MySQL | Docker | kafka | Kibana | Maven | Microservice | Component Testing | Automation</p>
-                <p class="skills__text">Expertise in Java (Core & Advanced), Spring Boot, Spring MVC, and microservices architecture, ensuring scalable software solutions.
-                    • Skilled in RESTful API development, API security (OAuth2, JWT), and seamless integration with external systems.
-                    • Hands-on experience with database management using SQL, PostgreSQL, and MongoDB for optimized data storage solutions.
-                    • Proficient in DevOps practices, leveraging CI/CD pipelines with Jenkins and Docker for automated deployments.
-                    • Strong understanding of real-time data processing using Apache Kafka, ensuring efficient event-driven architectures.
-                    • Adept at test automation with JUnit and Mockito, improving code quality and reducing bug occurrences.
-                    • Proven ability to mentor junior engineers and work closely with cross-functional teams to achieve project success.</p>
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">JAVA</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">PostgreSQL</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">Spring boot</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">Kafka</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">CI/CD</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">50%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">Docker</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">50%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-java skills__icon'></i>
-                                <span class="skills__name">Kibana</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">100%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
-                <h2 class="work__subtitle">3+ Years of Experience</h2>
-                <p class="work__text">•	Responsible for understanding and implementing microservice architecture principles </p>
-                    <p class="work__text">• Developed and maintained RESTful APIs and microservices using Spring Boot for Telecommunication services. </p>
-                    <p class="work__text">•	Designed and documented APIs that allows services to communicate with each other and with external systems. </p>
-                    <p class="work__text">•	Involved in scaling of microservices to handle varying loads. Involved in implementation of fault tolerance and error handling mechanisms </p>
-                    <p class="work__text">•	Integrated security features like OAuth2 and JWT for API security and user authentication. Conducted Junit5 testing for microservices to ensure its functionality. </p>
-                    <p class="work__text">•	Developed and maintained Kafka to handle real-time data processing of events from multiple sources. </p>
-                    <p class="work__text">•	Developed automated test cases using JUnit and Mockito to maintain high-quality code standards. Implemented CI/CD pipelines for automating deployment process. </p>
-                    <p class="work__text">•	Worked closely with clients to gather requirements and translate them into technical specifications for implementation. </p>
-                    <p class="work__text">•	Mentored junior engineers in advanced concepts, fostering professional development within the team. </p>
-                    </p>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-             <!--===== Certification & Awards =====-->
-             <section class="about section " id="certs">
-                <h2 class="section-title">Certifications & Awards</h2>
-                  <!--===== Container  =====-->
-                <div class="certs__container bd-grid" > 
-                    <div class="skills__data" >
+                    <div class="skills__data">
                         <div class="skills__names">
-                            <a href="assets\certifications\Infosys Certified JAVA SE8 Developer.pdf" style="color: rgb(126, 167, 14);" class="skills__name">Infosys certified Java SE8 Developer</a>
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
                         </div>
                     </div>
-                    <div class="skills__data" >
+                    <div class="skills__data">
                         <div class="skills__names">
-                            <a href="assets\certifications\Infosys Certified L2 Junior Java Programmer.pdf" style="color: rgb(126, 167, 14);" class="skills__name">Infosys Certified L2 Junior Java Programmer</a>
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">JAVA</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+                        </div>
+                        <div>
+                            <span class="skills__percentage">100%</span>
                         </div>
                     </div>
-                    <div class="skills__data" >
+                    <div class="skills__data">
                         <div class="skills__names">
-                            <a href="assets\certifications\Postgres Developer.pdf" style="color: rgb(126, 167, 14);" class="skills__name">Postgres Developer</a>
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">PostgreSQL</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">100%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">Spring boot</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">100%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">Kafka</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">100%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">CI/CD</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">Docker</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-java skills__icon'></i>
+                            <span class="skills__name">Kibana</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">100%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">65%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxs-paint skills__icon'></i>
+                            <span class="skills__name">UX/UI</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
                         </div>
                     </div>
                 </div>
-                  <!--===== Container  =====-->
-                <div class="certs__container bd-grid" >   
-                    <div class="skills__data" >
-                        <div class="skills__names">
-                            <a href="assets\certifications\Infosys Certified Python Associate.pdf" style="color: rgb(126, 167, 14);" class="skills__name">Infosys Certified Python Associate</a>
-                        </div>
-                    </div>
-                    <div class="skills__data" >
-                        <div class="skills__names">
-                            <a href="assets\certifications\Cyber Security in SDLC.pdf" style="color: rgb(126, 167, 14);" class="skills__name">Cyber Security in SDLC</a>
-                        </div>
-                    </div>
-                    <div class="skills__data" >
-                        <div class="skills__names">
-                            <a href="assets\certifications\Genarative AI.pdf" style="color: rgb(126, 167, 14);" class="skills__name">Genarative AI</a>
-                        </div>
+
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+            <h2 class="work__subtitle">3+ Years of Experience</h2>
+            <p class="work__text">• Responsible for understanding and implementing microservice architecture principles
+            </p>
+            <p class="work__text">• Developed and maintained RESTful APIs and microservices using Spring Boot for
+                Telecommunication services. </p>
+            <p class="work__text">• Designed and documented APIs that allows services to communicate with each other and
+                with external systems. </p>
+            <p class="work__text">• Involved in scaling of microservices to handle varying loads. Involved in
+                implementation of fault tolerance and error handling mechanisms </p>
+            <p class="work__text">• Integrated security features like OAuth2 and JWT for API security and user
+                authentication. Conducted Junit5 testing for microservices to ensure its functionality. </p>
+            <p class="work__text">• Developed and maintained Kafka to handle real-time data processing of events from
+                multiple sources. </p>
+            <p class="work__text">• Developed automated test cases using JUnit and Mockito to maintain high-quality code
+                standards. Implemented CI/CD pipelines for automating deployment process. </p>
+            <p class="work__text">• Worked closely with clients to gather requirements and translate them into technical
+                specifications for implementation. </p>
+            <p class="work__text">• Mentored junior engineers in advanced concepts, fostering professional development
+                within the team. </p>
+            </p>
+
+            <div class="work__container bd-grid">
+                <a href="" class="work__img">
+                    <img src="assets/img/work1.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work3.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                </a>
+            </div>
+        </section>
+
+        <!--===== Certification & Awards =====-->
+        <section class="about section " id="certs">
+            <h2 class="section-title">Certifications & Awards</h2>
+            <!--===== Container  =====-->
+            <div class="certs__container bd-grid">
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="assets\certifications\Infosys Certified JAVA SE8 Developer.pdf"
+                            style="color: rgb(126, 167, 14);" class="skills__name">Infosys certified Java SE8
+                            Developer</a>
                     </div>
                 </div>
-                <div style="margin: 10%;">
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="assets\certifications\Infosys Certified L2 Junior Java Programmer.pdf"
+                            style="color: rgb(126, 167, 14);" class="skills__name">Infosys Certified L2 Junior Java
+                            Programmer</a>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="assets\certifications\Postgres Developer.pdf" style="color: rgb(126, 167, 14);"
+                            class="skills__name">Postgres Developer</a>
+                    </div>
+                </div>
+            </div>
+            <!--===== Container  =====-->
+            <div class="certs__container bd-grid">
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="assets\certifications\Infosys Certified Python Associate.pdf"
+                            style="color: rgb(126, 167, 14);" class="skills__name">Infosys Certified Python
+                            Associate</a>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="assets\certifications\Cyber Security in SDLC.pdf" style="color: rgb(126, 167, 14);"
+                            class="skills__name">Cyber Security in SDLC</a>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="assets\certifications\Genarative AI.pdf" style="color: rgb(126, 167, 14);"
+                            class="skills__name">Genarative AI</a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin: 10%;">
                 <a href="" class="work__img">
                     <img src="assets\certifications\Rise Insta Awards 07-Mar-2025.png" alt="">
                 </a>
-            </div> > 
-            </section>
+            </div> >
+        </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Thank You</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Send" class="contact__button button">
+                </form>
             </div>
-            <p class="footer__copy"> Thanks for visiting</p>
-        </footer>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Thank You</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy"> Thanks for visiting</p>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <script>
-            var icon = document.getElementById("icon");
-            icon.onclick = function() {
-                document.body.classList.toggle("dark-mode");
-                icon.src = document.body.classList.contains("dark-mode") ? "assets/img/contrast.png" : "assets/img/night-mode.png";
-            }
-        </script>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-mode");
+            icon.src = document.body.classList.contains("dark-mode") ? "assets/img/contrast.png" : "assets/img/night-mode.png";
+        }
+    </script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

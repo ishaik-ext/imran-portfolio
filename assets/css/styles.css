@@ -307,6 +307,36 @@ img {
   margin-right: 10%;
   color: var(--first-color);
 }
+/* Main Container */
+.skills-container {
+  width: 100%;
+  padding: 20px 5%; /* 5% left/right margin */
+  box-sizing: border-box;
+}
+
+/* Icons Grid */
+.icons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center icons */
+  gap: 16px; /* Fixed space between icons */
+  max-width: 100%;
+  margin-bottom: 3%;
+}
+
+/* Icons Styling */
+.icons-wrapper img {
+  width: 40px !important; /* Fixed size */
+  height: 40px !important; /* Fixed size */
+  object-fit: contain; /* Prevent distortion */
+  filter: brightness(0) opacity(0.7); /* Light black color */
+  transition: filter 0.2s ease;
+}
+
+/* Optional: Hover effect */
+.icons-wrapper img:hover {
+  filter: brightness(0) opacity(1); /* Darker on hover */
+}
 .work__text {
   font-size: var(--mid-font-size);
   margin-bottom: 3%;
@@ -512,6 +542,33 @@ img {
   .home {
     padding: 8rem 0 2rem;
   }
+  #skill_icons {
+    width: 100%;
+  /* Allows horizontal scrolling if needed */
+    padding: 10px 0;
+}
+
+.icons-container {
+    display: flex;
+    gap: 30px; /* Spacing between icons */
+    align-items: center;
+    flex-wrap: nowrap; /* Ensures icons stay in a single row */
+    padding: 5px 10px;
+    flex-wrap: wrap; /* Icons wrap to next line if space runs out */
+    overflow-x: hidden; /* No horizontal scroll */
+}
+
+.icons-container img {
+opacity: 0.5;
+    height: 40px; /* Fixed icon size */
+    width: auto; /* Maintain aspect ratio */
+    transition: filter 0.2s ease;
+}
+
+/* Optional: Remove grey effect on hover */
+.icons-container img:hover {
+    filter: grayscale(0%) brightness(1);
+}
   .home__img {
     width: 400px;
     bottom: 10%;
