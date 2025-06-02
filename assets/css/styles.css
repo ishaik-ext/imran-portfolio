@@ -337,6 +337,17 @@ img {
 .icons-wrapper img:hover {
   filter: brightness(0) opacity(1); /* Darker on hover */
 }
+/* Loading Animation (Optional) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 0.9; transform: translateY(0); }
+}
+
+.icons-wrapper img {
+  animation: fadeIn 0.4s ease-out forwards;
+  animation-delay: calc(var(--i) * 0.05s); /* Stagger effect */
+}
+
 .work__text {
   font-size: var(--mid-font-size);
   margin-bottom: 3%;
